@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Typography, Grid, Card, CardContent } from '@mui/material';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const services = [
   {
@@ -26,35 +26,26 @@ const services = [
 
 const Services = () => {
   return (
-    <>
-    <Typography variant="h4" gutterBottom sx={{ mt: 6, mb: 2 , textAlign: 'center'}}>
-        Services
-        </Typography>
-    <Container>
-      <Box sx={{ textAlign: 'center', my: 4 }}>
-      
-        <Typography variant="h3" gutterBottom>
-          We provide Artificial Intelligence Services
-        </Typography>
-      </Box>
-      <Grid container spacing={4}>
+    <Container className="my-4">
+      <h4 className="text-center">Services</h4>
+      <Row className="text-center my-4">
+        <Col>
+          <h3>We provide Artificial Intelligence Services</h3>
+        </Col>
+      </Row>
+      <Row>
         {services.map((service) => (
-          <Grid item xs={12} md={6} key={service.id}>
+          <Col xs={12} md={6} key={service.id} className="mb-4">
             <Card>
-              <CardContent>
-                <Typography variant="h5" component="div" gutterBottom>
-                  {service.id}. {service.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {service.description}
-                </Typography>
-              </CardContent>
+              <Card.Body>
+                <Card.Title>{service.id}. {service.title}</Card.Title>
+                <Card.Text>{service.description}</Card.Text>
+              </Card.Body>
             </Card>
-          </Grid>
+          </Col>
         ))}
-      </Grid>
+      </Row>
     </Container>
-    </>
   );
 };
 

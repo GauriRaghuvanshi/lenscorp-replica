@@ -1,8 +1,5 @@
 import React from 'react';
-import { Container, Grid, Card, CardContent, Typography } from '@mui/material';
-import MeetTruAI from '../components/meet-ai/Meet-AI';
-import WhyChooseLens from '../components/whychooselens/WhyChooseLens';
-
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const features = [
   {
@@ -25,26 +22,19 @@ const features = [
 
 const LandingPage = () => {
   return (
-    <Container>
-   
-
-      {/* Features Section */}
-      <Grid container spacing={4} sx={{ mt: 4 }}>
+    <Container className="my-4">
+      <Row>
         {features.map((feature, index) => (
-          <Grid item xs={12} md={3} key={index}>
+          <Col xs={12} md={3} key={index} className="mb-4">
             <Card>
-              <CardContent>
-                <Typography variant="h6" component="div">
-                  {feature.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {feature.description}
-                </Typography>
-              </CardContent>
+              <Card.Body>
+                <Card.Title>{feature.title}</Card.Title>
+                <Card.Text>{feature.description}</Card.Text>
+              </Card.Body>
             </Card>
-          </Grid>
+          </Col>
         ))}
-      </Grid>
+      </Row>
     </Container>
   );
 };

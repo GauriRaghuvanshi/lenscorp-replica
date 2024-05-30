@@ -1,0 +1,43 @@
+
+/* Container margin and padding adjustments */
+.container.my-4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Title and section headings styling */
+  h4.text-center.my-4 {
+    margin-top: 100px;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Image styling to ensure they are centered and responsive */
+  .vision-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Adjustments for the row containing images and text */
+  .align-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add some space between the sections */
+  .my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Paragraph styling */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }

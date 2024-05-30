@@ -1,0 +1,23 @@
+clients-row {
+    overflow: hidden;
+  }
+  
+  .client-col {
+    display: inline-block;
+    animation: moveLeftRight 10s linear infinite; /* Adjust timing and animation as needed */
+  }
+  
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(+100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    55% {
+      animation-timing-function: steps(1, end);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

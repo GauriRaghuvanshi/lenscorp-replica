@@ -1,33 +1,38 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton } from '@mui/material';
-import { Brightness4 } from '@mui/icons-material';
-import { Link as RouterLink } from 'react-router-dom';
-import logo from '../../assets/nav_logo.webp'
+import React, { useContext } from 'react';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+import logo from '../../assets/nav_logo.webp';
+import { ThemeContext } from '../../theme/ThemeContext';
 
 const Header = () => {
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
+
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
-      <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          <img src={logo} alt="LensCorp Logo" style={{ height: '60px' }} />
-        </Typography>
-        <Button color="inherit" component={RouterLink} to="/makemyweb">
-          MakeMyWeb
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="/">
+        <img src={logo} alt="LensCorp Logo" style={{ height: '60px' }} />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav>
+          <LinkContainer to="/makemyweb">
+            <Nav.Link>MakeMyWeb</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/">
+            <Nav.Link>Home</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/company">
+            <Nav.Link>Company</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/blogs">
+            <Nav.Link>Blogs</Nav.Link>
+          </LinkContainer>
+        </Nav>
+        <Button variant="outline-secondary" onClick={toggleTheme}>
+          <i className={darkMode ? "bi bi-moon" : "bi bi-brightness-high"}></i>
         </Button>
-        <Button color="inherit" component={RouterLink} to="/">
-          Home
-        </Button>
-        <Button color="inherit" component={RouterLink} to="/company">
-          Company
-        </Button>
-        <Button color="inherit" component={RouterLink} to="/blogs">
-          Blogs
-        </Button>
-        <IconButton color="inherit">
-          <Brightness4 />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

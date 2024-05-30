@@ -2,16 +2,19 @@ import React from 'react';
 import {  Route, Routes } from 'react-router-dom';
 import Header from './components/header/Header';
 import Home from './pages/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ThemeProvider } from '../src/theme/ThemeContext';
+
 
 const App = () => {
   return (
-    <>
+    <ThemeProvider>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Add other routes here */}
       </Routes>
-    </>
+    </ThemeProvider>
   );
 };
 

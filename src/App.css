@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+/* Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar-light .navbar-brand, 
+.navbar-light .nav-link {
+  color: #000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-theme .navbar-light .navbar-brand, 
+body.dark-theme .navbar-light .nav-link {
+  color: #fff;
+}
+
+/* Additional styles to target buttons, links, etc. */
+body.dark-theme .btn {
+  background-color: #444;
+  color: #fff;
+}
+
+body.light-theme .btn {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Vision.css */

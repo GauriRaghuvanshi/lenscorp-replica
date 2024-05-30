@@ -1,30 +1,13 @@
 import React from 'react';
-import { Box, Typography, Button } from '@mui/material';
+import { Container, Button } from 'react-bootstrap';
 
 const Hero = () => {
   return (
-    <Box
-      sx={{
-        height: '80vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-        background: 'linear-gradient(to right, #f8fafc, #e0f7fa)',
-      }}
-    >
-      <Typography variant="h2" component="h1" gutterBottom>
-        We are at the 
-        forefront of AI
-      </Typography>
-      <Typography variant="h6" component="p" gutterBottom>
-        From Conserving Wildlife to Automatically Generating Caricatures - <b>We Do It All</b>
-      </Typography>
-      <Button variant="contained" color="primary" sx={{ mt: 2 }}>
-        Learn More
-      </Button>
-    </Box>
+    <Container fluid className="d-flex flex-column justify-content-center align-items-center text-center vh-100" style={{ background: 'linear-gradient(to right, #f8fafc, #e0f7fa)' }}>
+      <h1 className="display-4">We are at the forefront of AI</h1>
+      <p className="lead">From Conserving Wildlife to Automatically Generating Caricatures - <b>We Do It All</b></p>
+      <Button variant="primary" className="mt-2">Learn More</Button>
+    </Container>
   );
 };
 
