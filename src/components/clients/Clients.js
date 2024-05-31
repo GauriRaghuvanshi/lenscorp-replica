@@ -9,7 +9,7 @@ import "../clients/Client.css";
 const Clients = () => {
   return (
     <div id="clients"> 
-    <Button variant="outlined" className="mt-2" size="lg" href="/blog" style={{ display: 'block', margin: '0 auto' , maxWidth: '200px', textDecoration: 'none', justifyItems: 'center'}}>
+    <Button variant="inherit" className="mt-2" size="lg" href="/blogs" style={{ display: 'block', margin: '0 auto' , maxWidth: '200px', textDecoration: 'none', justifyItems: 'center'}}>
     Explore More
   </Button>
   
