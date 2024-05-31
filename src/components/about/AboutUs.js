@@ -12,7 +12,7 @@ const AboutUs = () => {
             <Col xs={12} md={6} className="text-center">
               <h1>Welcome To LENS</h1>
               <p className="mb-4">We put our hearts, souls and sweat into designing and developing custom AI-powered solutions for your business so you don’t have to.</p>
-              <button className="btn btn-outline-primary">Learn More</button>
+              <button className="btn btn-outline-primary" onClick={() => window.location.href = '/company'}>Learn More</button>
             </Col>
             <Col xs={12} md={6}>
               <div

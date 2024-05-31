@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import client1 from "../../assets/client1.webp";
 import client2 from "../../assets/client2.webp";
 import client3 from "../../assets/client3.webp";
@@ -8,7 +8,12 @@ import "../clients/Client.css";
 
 const Clients = () => {
   return (
+    <> <Button variant="outlined" className="mt-2" size="lg" href="/blog" style={{ display: 'block', margin: '0 auto' , maxWidth: '200px', textDecoration: 'none', justifyItems: 'center'}}>
+    Explore More
+  </Button>
+  
     <Container className="my-4">
+
       <Row className="text-center my-4">
         <Col>
           <h1>We Work With Amazing Clients</h1>
@@ -29,6 +34,7 @@ const Clients = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 

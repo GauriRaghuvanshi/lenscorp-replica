@@ -4,6 +4,8 @@ import Header from './components/header/Header';
 import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from '../src/theme/ThemeContext';
+import CompanyPage from './pages/CompanyPage';
+import BlogsPage from './pages/BlogsPage';
 
 
 const App = () => {
@@ -12,7 +14,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Add other routes here */}
+        <Route path ="/company" element = {<CompanyPage/>} />
+        <Route path = "/blogs" element = {<BlogsPage/>}/>
       </Routes>
     </ThemeProvider>
   );
