@@ -1,0 +1,42 @@
+/* General styles for service cards */
+.service-card {
+    transition: border 0.3s ease;
+  }
+  
+  /* Specific styles for each service card */
+  .service-1 {
+    background-color: #f8d7da;
+  }
+  
+  .service-2 {
+    background-color: #d4edda;
+  }
+  
+  .service-3 {
+    background-color: #d1ecf1;
+  }
+  
+  .service-4 {
+    background-color: #fff3cd;
+  }
+  
+  /* Hover effect for service cards */
+  .service-card:hover {
+    border: 2px solid currentColor;
+  }
+  
+  .service-1:hover {
+    border-color: #f5c6cb;
+  }
+  
+  .service-2:hover {
+    border-color: #c3e6cb;
+  }
+  
+  .service-3:hover {
+    border-color: #bee5eb;
+  }
+  
+  .service-4:hover {
+    border-color: #ffeeba;
+  }

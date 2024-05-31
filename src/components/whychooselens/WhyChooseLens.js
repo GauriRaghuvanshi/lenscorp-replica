@@ -7,6 +7,8 @@ const WhyChooseLens = () => {
   return (
     <Container className="my-4">
       <h4 className="text-center my-4" marginTop="100px">Why Choose Lens</h4>
+      <div className="NewQuestions_underline__PkZOO"></div>
+
       <Row className="text-center my-4">
         <Col>
           <h1>AI-driven solutions backed by science</h1>

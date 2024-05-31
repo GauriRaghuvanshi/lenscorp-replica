@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <AboutUs id = "about"/>
+      <AboutUs id = "aboutus"/>
       <Services id = "services" />
       <MeetTruAI id = "tru-ai"/>
       <WhyChooseLens />

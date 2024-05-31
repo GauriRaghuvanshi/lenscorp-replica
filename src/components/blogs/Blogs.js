@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import './Blogs.css'; // Import custom CSS file
 
 const blogData = [
   {
@@ -21,12 +22,14 @@ const blogData = [
 
 const Blogs = () => {
   return (
-    <div id="blogs">
+    <div id='blogs'>
+   
     <Container className="my-4">
-      <h4 className="text-center">Our Blogs</h4>
+      <h4 className="text-center">OUR BLOGS</h4>
+      <div className="NewQuestions_underline__PkZOO"></div>
       <Row className="text-center my-4">
         <Col>
-          <h1>Inhouse Mindscape</h1>
+          <h1 className="inhouse-mindscape">Inhouse Mindscape</h1>
         </Col>
       </Row>
       <Row>
@@ -42,7 +45,6 @@ const Blogs = () => {
         ))}
       </Row>
     </Container>
-   
     </div>
   );
 };

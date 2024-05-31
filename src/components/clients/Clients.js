@@ -8,13 +8,20 @@ import "../clients/Client.css";
 
 const Clients = () => {
   return (
-    <div id="clients"> 
-    <Button variant="inherit" className="mt-2" size="lg" href="/blogs" style={{ display: 'block', margin: '0 auto' , maxWidth: '200px', textDecoration: 'none', justifyItems: 'center'}}>
-    Explore More
-  </Button>
-  
+    <div id="clients">
+     <Row className="justify-content-center">
+        <Button 
+          variant="outline-dark" 
+          size="lg" 
+          href="/blog" 
+          className="explore-button"
+          style={{ width: '200px' }} // Adjust the width as needed
+        >
+          Explore More <i className="fas fa-arrow-right"></i>
+        </Button>
+      </Row>
+ 
     <Container className="my-4">
-
       <Row className="text-center my-4">
         <Col>
           <h1>We Work With Amazing Clients</h1>
@@ -34,6 +41,7 @@ const Clients = () => {
           <img src={client4} alt="Client 4" />
         </Col>
       </Row>
+     
     </Container>
     </div>
   );
