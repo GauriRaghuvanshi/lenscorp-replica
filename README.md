@@ -1,5 +1,5 @@
 # Getting Started with  App
-First clone the project from [https://github.com/tyagiashmit4/lenscorp-replica.git]
+First clone the project from ###`https://github.com/tyagiashmit4/lenscorp-replica.git`
 
 # Node Modules 
 To install node modules use this command. This has to be run before the development server
