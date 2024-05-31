@@ -4,7 +4,7 @@ import '../numbers/Numbers.css'; // Assuming you create this CSS file for custom
 
 const ByTheNumbers = () => {
   return (
-    <div className="by-the-numbers my-5 py-5 text-center">
+    <div className="by-the-numbers my-5 py-5 text-center" >
       <Container>
         <h2 className="mb-4">By the numbers</h2>
         <Row>

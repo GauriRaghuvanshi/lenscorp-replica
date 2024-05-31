@@ -21,7 +21,7 @@ const blogData = [
 
 const Blogs = () => {
   return (
-    <>
+    <div id="blogs">
     <Container className="my-4">
       <h4 className="text-center">Our Blogs</h4>
       <Row className="text-center my-4">
@@ -43,7 +43,7 @@ const Blogs = () => {
       </Row>
     </Container>
    
-    </>
+    </div>
   );
 };
 

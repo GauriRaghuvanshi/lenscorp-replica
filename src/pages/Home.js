@@ -18,13 +18,13 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <AboutUs/>
-      <Services />
-      <MeetTruAI/>
-      <WhyChooseLens/>
-      <LandingPage/>
+      <AboutUs id = "about"/>
+      <Services id = "services" />
+      <MeetTruAI id = "tru-ai"/>
+      <WhyChooseLens />
+      <LandingPage />
       <Vision/>
-      <Blogs/>
+      <Blogs id = "blogs"/>
       <Clients/>
       <ByTheNumbers/>
       <FAQ/>

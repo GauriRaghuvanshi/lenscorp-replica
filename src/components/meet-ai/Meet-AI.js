@@ -5,6 +5,7 @@ import video from '../../assets/video.mp4';
 
 const MeetTruAI = () => {
   return (
+    <div id="tru-ai">
     <Container className="mt-4" style={{ maxWidth: '1000px', marginBottom: '150px' }}>
       <Row>
         <Col xs={4}>
@@ -25,6 +26,7 @@ const MeetTruAI = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

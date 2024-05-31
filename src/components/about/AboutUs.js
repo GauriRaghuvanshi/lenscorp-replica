@@ -4,7 +4,7 @@ import img from '../../assets/aboutLatest.webp'
 
 const AboutUs = () => {
   return (
-    <>
+    <div id='about'>
       <h1 className="mt-4 mb-4 text-center">About Us</h1>
       <Container className="mt-4">
         <div className="bg-light p-4">
@@ -37,7 +37,7 @@ const AboutUs = () => {
           </Row>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

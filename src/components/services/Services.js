@@ -26,6 +26,7 @@ const services = [
 
 const Services = () => {
   return (
+    <div id="services">
     <Container className="my-4">
       <h4 className="text-center">Services</h4>
       <Row className="text-center my-4">
@@ -46,6 +47,7 @@ const Services = () => {
         ))}
       </Row>
     </Container>
+    </div>
   );
 };
 
