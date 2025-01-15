@@ -1,62 +1,42 @@
-.NewQuestions_underline__PkZOO {
-    background-image: linear-gradient(to right, 
-      #004d99,
-      #0055a6,
-      #005eb3,
-      #0067bf,
-      #0070cc,
-      #0079d9,
-      #0082e6,
-      #008bf2,
-      #0094ff,
-      #009dff
-    ); /* Adjust the color stops as needed */
-    height: 3.2px; /* Adjust the height of the underline */
-    width: 30px; /* Adjust the width to match the text */
-    margin: auto; /* Center the underline */
-    margin-top: 5px; /* Adjust the top margin as needed */
-    border-radius: 1.5px;
-  }
-
-  /* General styles for service cards */
+/* General styles for service cards */
 .service-card {
-  transition: border 0.3s ease;
-}
-
-/* Specific styles for each service card */
-.service-1 {
-  background-color: #f8d7da;
-}
-
-.service-2 {
-  background-color: #d4edda;
-}
-
-.service-3 {
-  background-color: #d1ecf1;
-}
-
-.service-4 {
-  background-color: #fff3cd;
-}
-
-/* Hover effect for service cards */
-.service-card:hover {
-  border: 2px solid currentColor;
-}
-
-.service-1:hover {
-  border-color: #f5c6cb;
-}
-
-.service-2:hover {
-  border-color: #c3e6cb;
-}
-
-.service-3:hover {
-  border-color: #bee5eb;
-}
-
-.service-4:hover {
-  border-color: #ffeeba;
-}
+    transition: border 0.3s ease;
+  }
+  
+  /* Specific styles for each service card */
+  .service-1 {
+    background-color: #f8d7da;
+  }
+  
+  .service-2 {
+    background-color: #d4edda;
+  }
+  
+  .service-3 {
+    background-color: #d1ecf1;
+  }
+  
+  .service-4 {
+    background-color: #fff3cd;
+  }
+  
+  /* Hover effect for service cards */
+  .service-card:hover {
+    border: 2px solid currentColor;
+  }
+  
+  .service-1:hover {
+    border-color: #f5c6cb;
+  }
+  
+  .service-2:hover {
+    border-color: #c3e6cb;
+  }
+  
+  .service-3:hover {
+    border-color: #bee5eb;
+  }
+  
+  .service-4:hover {
+    border-color: #ffeeba;
+  }

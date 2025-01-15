@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import logo from '../../assets/nav_logo.webp';
+import pdf1 from '../../assets/LENS_Code_of_Conduct.pdf'; 
+import pdf2 from '../../assets/LENS_Sustainability_Goals.pdf';
 const Footer = () => {
   return (
     <footer className="bg-light text-dark pt-5 pb-4">
@@ -21,11 +23,11 @@ const Footer = () => {
 
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 className="mb-4 font-weight-bold">Sitemap</h5>
-            <p><a href="#" className="text-dark">MakeMyWeb</a></p>
-            <p><a href="#" className="text-dark">Services</a></p>
-            <p><a href="#" className="text-dark">Products</a></p>
-            <p><a href="#" className="text-dark">Blogs</a></p>
-            <p><a href="#" className="text-dark">Life at LENS</a></p>
+            <p><a href="#tru-ai" className="text-dark">MakeMyWeb</a></p>
+            <p><a href="#services" className="text-dark">Services</a></p>
+            <p><a href="" className="text-dark">Products</a></p>
+            <p><a href="#blogs" className="text-dark">Blogs</a></p>
+            <p><a href="#aboutus" className="text-dark">Life at LENS</a></p>
           </div>
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -36,22 +38,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row d-flex justify-content-center mt-4" style={{ backgroundColor: '#21214a', padding: '10px', margin: '0' }}>
-          <div className="col-md-7 col-lg-8">
-            <p className="text-center text-md-left" style={{ marginLeft: '20px', color: 'grey' }}>
-            <span style={{ color: 'grey' }}> © 2023</span>
-            <span style={{ color: 'white' }}>LENS, Inc.</span> 
-            <span style={{ color: 'grey' }}> All rights reserved.</span>
-            </p>
-          </div>
+        <div className="row d-flex justify-content-center mt-4" style={{ backgroundColor: '#21214a', padding: '10px', margin: '0' , width: '100%'}}>
+  <div className="col-md-7 col-lg-8">
+    <p className="text-center text-md-left" style={{ marginLeft: '20px', color: 'grey', fontSize: '18px' }}>
+      <span style={{ color: 'grey' }}>© 2023</span>
+      <span style={{ color: 'white' }}>LENS, Inc.</span>
+      <span style={{ color: 'grey' }}> All rights reserved.</span>
+    </p>
+  </div>
 
-          <div className="col-md-5 col-lg-4" style={{ backgroundColor: '#21214a', padding: '10px', margin: '0' }}>
-            <div className="text-center text-md-right" style={{ marginRight: '100px' }}>
-              <a href="#" className="text-white me-3">Code of conduct</a>
-              <a href="#" className="text-white">Sustainability Goals</a>
-            </div>
-          </div>
-        </div>
+  <div className="col-md-5 col-lg-4" style={{ backgroundColor: '#21214a', padding: '10px', margin: '0' }}>
+    <div className="text-center text-md-right" style={{ marginRight: '10px', fontSize: '18px' }}>
+      <a href={pdf1} className="text-white me-3" style={{ fontSize: '18px' }}>Code of conduct</a>
+      <a href={pdf2} className="text-white" style={{ fontSize: '18px' }}>Sustainability Goals</a>
+    </div>
+  </div>
+</div>
       </div>
     </footer>
   );

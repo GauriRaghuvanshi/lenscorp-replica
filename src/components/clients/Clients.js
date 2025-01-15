@@ -8,6 +8,19 @@ import "../clients/Client.css";
 
 const Clients = () => {
   return (
+    <div id="clients">
+     <Row className="justify-content-center">
+        <Button 
+          variant="outline-dark" 
+          size="lg" 
+          href="/blog" 
+          className="explore-button"
+          style={{ width: '200px' }} // Adjust the width as needed
+        >
+          Explore More <i className="fas fa-arrow-right"></i>
+        </Button>
+      </Row>
+ 
     <Container className="my-4">
       <Row className="text-center my-4">
         <Col>
@@ -28,18 +41,9 @@ const Clients = () => {
           <img src={client4} alt="Client 4" />
         </Col>
       </Row>
-      <Row className="justify-content-center">
-        <Button 
-          variant="outline-dark" 
-          size="lg" 
-          href="/blog" 
-          className="explore-button"
-          style={{ width: '200px' }} // Adjust the width as needed
-        >
-          Explore More <i className="fas fa-arrow-right"></i>
-        </Button>
-      </Row>
+     
     </Container>
+    </div>
   );
 };
 

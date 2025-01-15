@@ -20,9 +20,7 @@ const Vision = () => {
           <img src={image1} alt="Description 1" className="vision-image" />
         </Col>
         <Col xs={12} md={6}>
-          <div className="vision-text">
-            <p><strong>Diversity & Fairness:</strong> When training our AI models, we consider ethical and social implications of algorithm-based decision making. Our solutions use high-quality and fairly-represented data sets to eliminate human cognitive biases.</p>
-          </div>
+          <p><b>Diversity & Fairness:</b>This data relates to how AI is being used to solve environmental issues.</p>
         </Col>
         <div className="vertical-line"></div> {/* Vertical line */}
       </Row>
@@ -31,9 +29,7 @@ const Vision = () => {
           <img src={image2} alt="Description 2" className="vision-image" />
         </Col>
         <Col xs={12} md={6}>
-          <div className="vision-text">
-            <p><strong>Regulatory Compliance:</strong> Working with clients globally, LENS acknowledges applicable data privacy regulations, such as the GDPR, HIPAA and others, in all our solutions handling sensitive data. We also ensure our algorithms allow for the required level of decision-making transparency and explainability.</p>
-          </div>
+          <p><b>Regulatory Compliance:</b> Working with clients globally, LENS acknowledges applicable data privacy regulations, such as the GDPR, HIPAA and others, in all our solutions handling sensitive data. We also ensure our algorithms allow for the required level of decision-making transparency and explainability.</p>
         </Col>
         <div className="vertical-line"></div> {/* Vertical line */}
       </Row>
@@ -42,9 +38,7 @@ const Vision = () => {
           <img src={image3} alt="Description 3" className="vision-image" />
         </Col>
         <Col xs={12} md={6}>
-          <div className="vision-text">
-            <p><strong>Code of Ethics:</strong> LENS believes in a just, non-violent world of equality and fairness. We prize democratic values, civil liberties and open and informed debate. When used to further these values, algorithm-based decision-making models can continue to make the world a safer, better place for everyone.</p>
-          </div>
+          <p><b>Code of Ethics:</b> LENS believes in a just, non-violent world of equality and fairness. We prize democratic values, civil liberties and open and informed debate. When used to further these values, algorithm-based decision-making models can continue to make the world a safer, better place for everyone.</p>
         </Col>
       </Row>
     </Container>

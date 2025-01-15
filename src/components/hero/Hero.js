@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import {React, useState}  from 'react';
 import { Container, Button } from 'react-bootstrap';
-import backgroundImage from '../../assets/Desktop_-_23_u3ypg0.webp'; // Adjust the path as necessary
-
+import bgimage from  '../../assets/Desktop_-_23_u3ypg0.webp'
 const Hero = () => {
   const [hovered, setHovered] = useState(false);
 
@@ -15,7 +14,7 @@ const Hero = () => {
   };
 
   const containerStyle = {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(${bgimage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     paddingLeft: '100px',

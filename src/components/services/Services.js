@@ -27,6 +27,7 @@ const services = [
 
 const Services = () => {
   return (
+    <div id='services'>
     <Container className="my-4">
       <h4 className="text-center">Services</h4>
       <div className="NewQuestions_underline__PkZOO"></div>
@@ -47,8 +48,9 @@ const Services = () => {
             </Card>
           </Col>
         ))}
-      </Row>
+      </Row>  
     </Container>
+    </div>
   );
 };
 

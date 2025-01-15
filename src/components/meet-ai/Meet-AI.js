@@ -15,6 +15,7 @@ const MeetTruAI = () => {
   };
 
   return (
+    <div id='tru-ai'>
     <Container fluid className="mt-4" style={{ backgroundColor: '#21214a', color: 'white', padding: '40px 20px', borderRadius: '10px', width: '100%' }}>
       <Row className="justify-content-center">
         <Col xs={12} md={3} className="d-flex justify-content-center align-items-center">
@@ -42,6 +43,7 @@ const MeetTruAI = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

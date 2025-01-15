@@ -26,7 +26,7 @@ const AboutUs = () => {
   };
 
   return (
-    <>
+    <div id='about'>
       <h1 className="mt-4 mb-4 text-center" style={{ fontSize: '3rem' }}>About Us</h1>
       <div className="NewQuestions_underline__PkZOO"></div>
 
@@ -69,7 +69,7 @@ const AboutUs = () => {
           </Row>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

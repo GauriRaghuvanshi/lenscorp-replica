@@ -15,7 +15,7 @@ const Header = () => {
   }, [darkMode]);
 
   return (
-    <Navbar bg={darkMode ? "dark" : "light"} expand="lg" variant={darkMode ? "dark" : "light"}>
+    <Navbar bg="light" expand="lg">
       <Navbar.Brand href="/" style={{ marginLeft: '80px' }}>
         <img src={logo} alt="LensCorp Logo" style={{ height: '60px' }} />
       </Navbar.Brand>
@@ -36,7 +36,7 @@ const Header = () => {
           </LinkContainer>
         </Nav>
         <Button variant="outline-secondary" onClick={toggleTheme} style={{ marginRight: '50px' }}>
-          <i className={darkMode ? "bi bi-brightness-high" : "bi bi-moon"}></i>
+          <i className={darkMode ? "bi bi-moon" : "bi bi-brightness-high"}></i>
         </Button>
       </Navbar.Collapse>
     </Navbar>

@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Getting Started with  App
+First clone the project from ###`https://github.com/tyagiashmit4/lenscorp-replica.git`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Node Modules 
+To install node modules use this command. This has to be run before the development server
+### `npm install`
 
 ## Available Scripts
 

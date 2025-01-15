@@ -22,6 +22,8 @@ const blogData = [
 
 const Blogs = () => {
   return (
+    <div id='blogs'>
+   
     <Container className="my-4">
       <h4 className="text-center">OUR BLOGS</h4>
       <div className="NewQuestions_underline__PkZOO"></div>
@@ -43,6 +45,7 @@ const Blogs = () => {
         ))}
       </Row>
     </Container>
+    </div>
   );
 };
 

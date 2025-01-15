@@ -21,17 +21,4 @@
     border: 2px solid black;
     margin-bottom: 1rem;
   }
-  .placard {
-    border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
-  }
-  
-  .placard-hovered {
-    border-color: red; /* Change the border color on hover */
-    background-color: lightblue; /* Change the background color on hover */
-  }
   
