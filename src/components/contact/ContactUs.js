@@ -8,17 +8,28 @@ const Contact = () => {
         <div className="col-md-6">
           <div className="row justify-content-center my-5">
             <div className="col-md-8 text-center">
-              <h2>Get in touch with us</h2>
+              <h1 style={{ fontSize: '4rem' }}>Get in touch with us</h1>
               <p>Send your enquiry now!</p>
               <form>
-                <div className="input-group mb-3">
+                <div className="input-group mb-3" style={{ borderRadius: '50px', overflow: 'hidden', border: '2px solid grey' }}>
                   <input
                     type="email"
                     className="form-control"
                     placeholder="Enter email address"
                     aria-label="Email"
+                    style={{ borderTopLeftRadius: '50px',
+                    borderBottomLeftRadius: '50px',
+                    borderTopRightRadius: '50px', border: '2px solid white',
+                    borderBottomRightRadius: '50px',
+                  }}
                   />
-                  <button className="btn btn-primary" type="button">
+                  <button className="btn btn-dark blue rounded-end" 
+                  type="button"
+                  style={{ borderTopRightRadius: '50px',
+                  borderBottomRightRadius: '50px',
+                  borderTopLeftRadius: '50px',
+                  borderBottomLeftRadius: '50px'
+}}>
                     Request Demo
                   </button>
                 </div>

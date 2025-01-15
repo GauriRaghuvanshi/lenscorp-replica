@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from '../src/theme/ThemeContext';
 import CompanyPage from './pages/CompanyPage';
 import BlogsPage from './pages/BlogsPage';
+import Footer from './components/footer/Footer';
 
 
 const App = () => {

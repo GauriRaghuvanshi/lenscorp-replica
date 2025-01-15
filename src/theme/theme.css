@@ -1,0 +1,38 @@
+/* src/theme/theme.css */
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #000;
+    --background-color-dark: #2c2c2c;
+    --text-color-dark: #fff;
+  }
+  
+  body.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
+  
+  body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  /* Navbar styles */
+  .navbar-light .navbar-brand, .navbar-light .nav-link {
+    color: var(--text-color-light);
+  }
+  
+  .navbar-dark .navbar-brand, .navbar-dark .nav-link {
+    color: var(--text-color-dark);
+  }
+  
+  /* Button styles */
+  .button-dark {
+    border-color: var(--text-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  .button-light {
+    border-color: var(--text-color-light);
+    color: var(--text-color-light);
+  }
+  

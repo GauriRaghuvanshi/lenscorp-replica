@@ -36,17 +36,19 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="row d-flex justify-content-center mt-4">
+        <div className="row d-flex justify-content-center mt-4" style={{ backgroundColor: '#21214a', padding: '10px', margin: '0' }}>
           <div className="col-md-7 col-lg-8">
-            <p className="text-center text-md-left">
-              © 2023 LENS, Inc. All rights reserved.
+            <p className="text-center text-md-left" style={{ marginLeft: '20px', color: 'grey' }}>
+            <span style={{ color: 'grey' }}> © 2023</span>
+            <span style={{ color: 'white' }}>LENS, Inc.</span> 
+            <span style={{ color: 'grey' }}> All rights reserved.</span>
             </p>
           </div>
 
-          <div className="col-md-5 col-lg-4">
-            <div className="text-center text-md-right">
-              <a href="#" className="text-dark me-3">Code of conduct</a>
-              <a href="#" className="text-dark">Sustainability Goals</a>
+          <div className="col-md-5 col-lg-4" style={{ backgroundColor: '#21214a', padding: '10px', margin: '0' }}>
+            <div className="text-center text-md-right" style={{ marginRight: '100px' }}>
+              <a href="#" className="text-white me-3">Code of conduct</a>
+              <a href="#" className="text-white">Sustainability Goals</a>
             </div>
           </div>
         </div>

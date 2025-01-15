@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import './Services.css'; // Make sure to create this CSS file
 
 const services = [
   {
@@ -28,6 +29,8 @@ const Services = () => {
   return (
     <Container className="my-4">
       <h4 className="text-center">Services</h4>
+      <div className="NewQuestions_underline__PkZOO"></div>
+
       <Row className="text-center my-4">
         <Col>
           <h3>We provide Artificial Intelligence Services</h3>
@@ -36,7 +39,7 @@ const Services = () => {
       <Row>
         {services.map((service) => (
           <Col xs={12} md={6} key={service.id} className="mb-4">
-            <Card>
+            <Card className={`service-card service-${service.id}`}>
               <Card.Body>
                 <Card.Title>{service.id}. {service.title}</Card.Title>
                 <Card.Text>{service.description}</Card.Text>
